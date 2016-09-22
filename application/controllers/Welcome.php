@@ -33,6 +33,7 @@ class Welcome extends Application
 			'cell_start' => '<td class="oneimage">',
 			'cell_alt_start' => '<td class="oneimage">'		
 		);
+		$this->table->set_template($params);
 
 		//generate the table
 		$rows = $this->table->make_columns($cells, 3);
